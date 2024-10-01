@@ -1,0 +1,3 @@
+Nome = "fefis" 
+% essa é uma variável nome
+'Babel','hitchcock','16'
