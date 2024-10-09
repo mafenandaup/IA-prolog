@@ -1,5 +1,6 @@
+animal(cachorro).
+animal(gato).
 
-%predicado membro de uma lista usando variaveis anonimas
+pode_miar(X) :- animal(X), X == gato.
 
-membro(X,[X|_]).
-membro(X,[_|T]):-membro(X,T).
+?- pode_miar(gato).
