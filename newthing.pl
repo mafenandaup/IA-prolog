@@ -1,6 +1,5 @@
-animal(cachorro).
-animal(gato).
+pessoa(maria).
+pessoa(joao).
 
-pode_miar(X) :- animal(X), X == gato.
-
-?- pode_miar(gato).
+quer_pizza(X) :- X = maria.
+?- quer_pizza(joao).
