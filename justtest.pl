@@ -3,7 +3,8 @@
 main :-
     hello,
     likeme,
-    filmes,
+    filmes(Capote),
+    write(Capote), nl,
     true.
 
 hello :-
@@ -12,5 +13,4 @@ hello :-
 likeme :-
     write('yes i do!'), nl.
 
-filmes :-
-    write('filme(\'Capote\',\'Drama\',\'Miller\',2005,98).'), nl.
+filmes(filme('Capote','Drama','Miller',2005,98)).
