@@ -1,11 +1,10 @@
 :- initialization(main).
-:- dynamic maria_dosdog/2.
 
 main :-
     hello,
     likeme,
     write('hi'), nl,
-    maria_dosdog(maria, peixe),
+    (maria_dosdog(maria, peixe) -> write('Maria has a peixe'), nl ; write('Maria does not have a peixe'), nl),
     true.
 
 hello :-
@@ -20,4 +19,3 @@ pets(john, gato).
 pets(elisa, coala).
 
 maria_dosdog(X, Y) :- pets(X, Y).
-
