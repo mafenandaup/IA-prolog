@@ -18,3 +18,4 @@ pets(john, gato).
 pets(elisa, coala).
 
 maria_dosdog(X) :- pets(maria, cachorro).
+?- maria_dosdog(maria, peixe).
