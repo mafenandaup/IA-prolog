@@ -3,8 +3,7 @@
 main :-
     hello,
     likeme,
-    filmes(Capote),
-    write(Capote), nl,
+    write('hi'), nl,
     true.
 
 hello :-
@@ -13,4 +12,9 @@ hello :-
 likeme :-
     write('yes i do!'), nl.
 
-filmes(filme('Capote','Drama','Miller',2005,98)).
+pets(maria, cachorro).
+pets(maria, peixe).
+pets(john, gato).
+pets(elisa, coala).
+
+maria_dosdog(X) :- pets(maria, cachorro).
