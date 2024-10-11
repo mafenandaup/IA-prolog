@@ -19,3 +19,8 @@ pets(john, gato).
 pets(elisa, coala).
 
 maria_dosdog(X, Y) :- pets(X, Y).
+
+likes(maria,cantar).
+likes(fernando,dancar).
+likes(fernando,dancar).
+likes
