@@ -5,7 +5,7 @@ main :-
     likeme,
     write('hi'), nl,
     (maria_dosdog(maria, peixe) -> write('Maria has a peixe'), nl ; write('Maria does not have a peixe'), nl),
-(singers(maria,cantar) -> write('É um cantor!') ;write('Não é um cantor!'),nl),
+(singers(elisa, pintar) -> write('Is um cantor!') ;write('Is not um cantor!'),nl),
     true.
 
 hello :-
