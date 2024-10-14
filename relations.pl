@@ -3,10 +3,10 @@
 % CABECA: AMNÉSIA, CAUDA DA LISTA; RESTO DOS ELEMENTOS. a lista, nesse caso, tem 
 %tamanho 4
 
-soma_lista([], 0).
-soma_lista([H|T], Soma) :-
-    soma_lista(T, SomaT),
-    Soma is H + SomaT.
+pessoa(maria, 16, brazil).
 
-divisao_lista([],0).
-divisao_lista
+?- pessoa(X, Y, Z).
+
+%X = maria,
+%Y = 16,
+%Z = brazil.
