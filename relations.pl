@@ -42,5 +42,7 @@ filho(livia,carla).
 descendente(X,Y):-filho(X,Y).
 descendente(X,Z):-filho(X,Y),descendente(Y,Z).
 
+% temperatura média - trabalhando com números em prolog
+
 
 
