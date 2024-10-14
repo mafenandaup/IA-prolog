@@ -20,3 +20,15 @@ idade(Nome,Idade) :- trabalho(Nome,_Profissao, Idade).
 % 5 = você também pode fazer algo como ?- idade(X, Y), Y >= 30., ou ?- cargo(Nome, Profissao), Profissao = cozinha.
 
 
+papis(jonas,tito).
+papis(ferdinando, trevor).
+papis(jonas,alice).
+mamis(herminia, joao).
+mamis(herminia, ferdinanda).
+mamis(herminia, julia).
+
+parente(X,Y) :- papis(X,Y). %fala que o pai X tem filho Y
+parente(X,Y) :- mamis(X,Y). %fala que a mãe X tem filho Y
+
+
+
