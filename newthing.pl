@@ -33,4 +33,3 @@ lancadoEntre(Titulo,Minimo,Maximo) :- filme(Titulo,_,_,Ano,_),
 %[‘Amnésia’, ‘Babel’, ‘Capote’, ‘CasaBlanca’]
 % CABECA: AMNÉSIA, CAUDA DA LISTA; RESTO DOS ELEMENTOS. a lista, nesse caso, tem 
 %tamanho 4
-% Definição do fato
