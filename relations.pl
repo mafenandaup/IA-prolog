@@ -44,5 +44,10 @@ descendente(X,Z):-filho(X,Y),descendente(Y,Z).
 
 % temperatura média - trabalhando com números em prolog
 
+%avg_Temp/2
+avg_temp(berlin,49).
+avg_temp(paris,56).
+avg_temp(brazil, 75).
+
 
 
