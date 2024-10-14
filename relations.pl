@@ -30,7 +30,9 @@ mamis(herminia, julia).
 parente(X,Y) :- papis(X,Y). %fala que o pai X tem filho Y
 parente(X,Y) :- mamis(X,Y). %fala que a mãe X tem filho Y
 
-filho(joao,ana).
+%outro exemplo pra descendentes - no caso, o que o prof passou
+
+filho(joao,ana). %joão é filho de ana%
 filho(ana,maria).
 filho(maria,pedro).
 filho(gabriel,pedro).
