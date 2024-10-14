@@ -32,6 +32,7 @@ parente(X,Y) :- mamis(X,Y). %fala que a mãe X tem filho Y
 
 %outro exemplo pra descendentes - no caso, o que o prof passou
 
+%filho/2 (parâmetro/aridade)
 filho(joao,ana). %joão é filho de ana%
 filho(ana,maria).
 filho(maria,pedro).
