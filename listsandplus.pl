@@ -6,3 +6,8 @@ listavazia(['oi']). %%pra executar: listavazia([H|T]) = listavazia(['oi']).
 
 pairparts([H|T], H,T).
 %9 ?- pairparts(a,b,c). é falso porque os itens abaixo não são pares ou listas.
+
+%10 ?- pairparts([1|2], X,Y).
+%X = 1,
+%Y = 2.
+
