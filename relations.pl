@@ -108,3 +108,27 @@ floor_number(X, Y) :- Y is floor(X).
 ceil_number(X, Y) :- Y is ceiling(X).
 absolute(X, Y) :- Y is abs(X).
 exponential(X, Y) :- Y is exp(X).
+
+% diferença entre = e is em prolog
+% =
+% Propósito: Usado para unificação de termos. 
+%Ele não avalia expressões aritméticas, apenas verifica se os dois lados são iguais
+% ou faz a unificação de variáveis.
+
+%EX: ?- X = 5.
+% X = 5.
+
+%?- X = 5 + 3.
+% X = 5 + 3.
+
+%is
+%Propósito: Usado para avaliação aritmética. 
+%Ele avalia a expressão do lado direito e unifica com a variável no lado esquerdo.
+
+%?- X is 5 + 3.
+% X = 8.
+
+%?- 8 is 5 + 3.
+% true.
+
+
