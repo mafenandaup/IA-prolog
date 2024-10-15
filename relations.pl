@@ -66,3 +66,21 @@ sametemp(Cidade1,Cidade2) :-
 avg_temp(Cidade1, F_Temp1),
 avg_temp(Cidade2, F_Temp2),
 F_Temp1 = F_temp2.
+
+timescore(bahia,45).
+timescore(botafogo,51).
+timescore(fluminense, 23).
+timescore(vitoria,36).
+timescore(flamengo,40).
+
+timematch(Time1, Time2) :- 
+    timescore(Team1, Score1),
+    timescore(Team2, Score2),
+    ( Score1 > Score2 ->
+    format('~w ganhou o jogo!', [Team1])
+; Score2 > Score1 ->
+    format('~w ganhou o jogo!', [Team2])
+; Score1 =:= Score2 ->
+    write('O jogo terminou empatado!')
+).
+    
