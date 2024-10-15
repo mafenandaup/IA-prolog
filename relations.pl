@@ -48,6 +48,7 @@ descendente(X,Z):-filho(X,Y),descendente(Y,Z).
 avg_temp(berlin,49).
 avg_temp(paris,56).
 avg_temp(brazil, 75).
+avg_temp(milan, 75).
 
 avg_temp_celsius(Cidade, C_Temp) :- 
     avg_temp(Cidade, F_Temp), 
@@ -60,3 +61,8 @@ write('esta muito frio para brincar').
 play_outside(Cidade) :- avg_temp_celsius(Cidade, C_temp), 
 C_temp >= 15, 
 write('pode brincar lá fora').
+
+sametemp(Cidade1,Cidade2) :-
+avg_temp(Cidade1, F_Temp1),
+avg_temp(Cidade2, F_Temp2),
+F_Temp1 = F_temp2.
