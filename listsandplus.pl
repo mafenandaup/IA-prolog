@@ -23,3 +23,5 @@ pairparts([H|T], H,T).
 pairparts_combined(['coisas fav:'|List], X, Y) :-
     meusfavs(List),
 pairparts(['coisas fav:'|List], X).
+
+headoflist([H|T], H).
