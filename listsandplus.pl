@@ -2,4 +2,4 @@
 
 meusfavs(['danca','canto','pintura','bailes','desenhos']).
 %cabeça: dança,; cauda: resto.
-listavazia(['oi']).
+listavazia(['oi']). %%pra executar: listavazia([H|T]) = listavazia(['oi']).
