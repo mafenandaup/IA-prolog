@@ -95,3 +95,6 @@ mau(tercisio).
 mau(alice).
 
 lutecontra(X) :- mau(X),format('combatendo o mal contra ~w', [X]).
+
+%math
+double(X,Y) :- Y is X*2.
