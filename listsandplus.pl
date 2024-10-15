@@ -32,3 +32,5 @@ firstwo([A,B|_T],A,B).
 % ?- firstwo([hi,everyone,1,2,3],A,B).
 %A = hi,
 %B = everyone.
+
+onlythird([_,_,X3|_T], X3).
