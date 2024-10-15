@@ -77,7 +77,7 @@ timematch(Time1, Time2) :-
     timescore(Team1, Score1),
     timescore(Team2, Score2),
     ( Score1 > Score2 ->
-    format('~w ganhou o jogo!', [Team1])
+    format('~w ganhou o jogo!', [Team1]) %w é um placeholder para o time.
 ; Score2 > Score1 ->
     format('~w ganhou o jogo!', [Team2])
 ; Score1 =:= Score2 ->
