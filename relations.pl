@@ -84,3 +84,5 @@ timematch(Team1, Team2) :-
     write('O jogo terminou empatado!')
 ).
     
+%robot AI
+%Badguy/1
