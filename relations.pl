@@ -52,3 +52,5 @@ avg_temp(brazil, 75).
 avg_temp_celsius(Cidade, C_Temp) :- 
     avg_temp(Cidade, F_Temp), 
 C_Temp is round((5/9) * (F_Temp - 32)).
+
+play_outside(Cidade) :- avg_temp_celsius(Cidade, C_temp)
