@@ -25,3 +25,10 @@ pairparts_combined(['coisas fav:'|List], X, Y) :-
 pairparts(['coisas fav:'|List], X).
 
 headoflist([H|T], H).
+%21 ?- headoflist([hello,1,2],X).
+%X = hello.
+
+firstwo([A,B|_T],A,B).
+% ?- firstwo([hi,everyone,1,2,3],A,B).
+%A = hi,
+%B = everyone.
