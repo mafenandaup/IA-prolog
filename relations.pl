@@ -97,4 +97,9 @@ mau(alice).
 lutecontra(X) :- mau(X),format('combatendo o mal contra ~w', [X]).
 
 %math
-double(X,Y) :- Y is X*2.
+
+round_number(X, Y) :- Y is round(X).
+floor_number(X, Y) :- Y is floor(X).
+ceil_number(X, Y) :- Y is ceiling(X).
+absolute(X, Y) :- Y is abs(X).
+exponential(X, Y) :- Y is exp(X).
