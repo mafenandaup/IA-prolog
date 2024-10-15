@@ -1,3 +1,4 @@
+:- dynamic pairparts/2.
 %%listas%%
 
 meusfavs(['danca','canto','pintura','bailes','desenhos']).
@@ -11,3 +12,10 @@ pairparts([H|T], H,T).
 %X = 1,
 %Y = 2.
 
+%11 ?-  pairparts(['coisas fav:'|meusfavs(X)],X,Y). 
+%X = 'coisas fav:',
+%Y = meusfavs('coisas fav:').
+
+pairparts_combined(['coisas fav:'|List], X, Y) :-
+    meusfavs(List),
+pairparts(['coisas fav:'|List], X).
