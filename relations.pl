@@ -73,7 +73,7 @@ timescore(fluminense, 23).
 timescore(vitoria,36).
 timescore(flamengo,40).
 
-timematch(Time1, Time2) :- 
+timematch(Team1, Team2) :- 
     timescore(Team1, Score1),
     timescore(Team2, Score2),
     ( Score1 > Score2 ->
