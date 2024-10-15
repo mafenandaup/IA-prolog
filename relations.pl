@@ -97,6 +97,11 @@ mau(alice).
 lutecontra(X) :- mau(X),format('combatendo o mal contra ~w', [X]).
 
 %math
+modulus(X, Y) :- Y is X mod 3. %%resto da divisão por 3
+int_divide(X, Y) :- Y is X // 4. %%divisão inteira.
+int_divide(X, Y) :- Y is X // 4.
+power(X, Y) :- Y is X ^ 3.
+square_root(X, Y) :- Y is sqrt(X).
 
 round_number(X, Y) :- Y is round(X).
 floor_number(X, Y) :- Y is floor(X).
