@@ -34,3 +34,4 @@ firstwo([A,B|_T],A,B).
 %B = everyone.
 
 onlythird([_,_,X3|_T], X3).
+%?- onlythird([1,2,3,4,5,6],X3). X3 = 3.
