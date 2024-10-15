@@ -49,5 +49,5 @@ avg_temp(berlin,49).
 avg_temp(paris,56).
 avg_temp(brazil, 75).
 
-
+avg_temp_celsius(Cidade, C_Temp) :- C_Temp is round ((C_temp5/9) * (F - 32)).
 
