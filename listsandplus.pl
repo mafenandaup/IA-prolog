@@ -12,6 +12,10 @@ pairparts([H|T], H,T).
 %X = 1,
 %Y = 2.
 
+%14 ?- pairparts([a,b,c,d,e],X,Y).
+%X = a,
+%Y = [b, c, d, e].
+
 %11 ?-  pairparts(['coisas fav:'|meusfavs(X)],X,Y). 
 %X = 'coisas fav:',
 %Y = meusfavs('coisas fav:').
