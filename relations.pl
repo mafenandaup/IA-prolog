@@ -85,4 +85,13 @@ timematch(Team1, Team2) :-
 ).
     
 %robot AI
-%Badguy/1
+%lute contra pessoas terriveis
+
+bom(fernando).
+bom(liv).
+bom(alicia).
+mau(julia).
+mau(tercisio).
+mau(alice).
+
+lutecontra(X) :- mau(X),format('combatendo o mal contra ~w', [X]).
