@@ -53,4 +53,10 @@ avg_temp_celsius(Cidade, C_Temp) :-
     avg_temp(Cidade, F_Temp), 
 C_Temp is round((5/9) * (F_Temp - 32)).
 
-play_outside(Cidade) :- avg_temp_celsius(Cidade, C_temp)
+play_outside(Cidade) :- avg_temp_celsius(Cidade, C_temp), 
+C_temp < 15, 
+write('esta muito frio para brincar').
+
+play_outside(Cidade) :- avg_temp_celsius(Cidade, C_temp), 
+C_temp >= 15, 
+write('pode brincar lá fora').
