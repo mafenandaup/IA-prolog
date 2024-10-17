@@ -50,8 +50,12 @@ button {
     flex: 1;
 }
 
+
+
+
 button:hover {
-    background-color: #218838;
+    background-color: #98bfcf;
+    color: black;
 }
 
 #result {
