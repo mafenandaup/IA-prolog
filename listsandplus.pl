@@ -39,3 +39,9 @@ onlythird([_,_,X3|_T], X3).
 
 %-----------RECURSÃO: SUPER IMPORTANTE!!-----------
 
+fatorial(1, 1). %define que o fatorial de 1 é 1 (caso base).
+fatorial(N,F) :-
+        N > 0, 
+        N1 is N - 1, 
+        fatorial(N1, F1), 
+        F is N * F1.
