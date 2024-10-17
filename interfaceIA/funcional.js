@@ -31,12 +31,12 @@ document.getElementById('diagnosis-form').addEventListener('submit', function(ev
     } else if (symptoms.includes('febre') && symptoms.includes('dor de cabeca') && symptoms.includes('dor no corpo') && symptoms.includes('manchas na pele')) {
         diagnosis = 'Dengue';
         treatment =  'Hidratação intensa e acompanhamento hospitalar';
-    } else if (symptoms.includes('febre') && symptoms.includes('falta de ar') && symptoms.includes('dor de garganta') && symptoms.includes('sem paladar')) {
+    } else if (symptoms.includes('febre') && symptoms.includes('dor de cabeca')  && symptoms.includes('dor de garganta') && symptoms.includes('dificuldade ao engolir')) {
         diagnosis = 'Amigdalite';
-        treatment =  'Isolamento, hidratação e acompanhamento médico';
-    } else if (symptoms.includes('febre') && symptoms.includes('falta de ar') && symptoms.includes('dor de garganta') && symptoms.includes('sem paladar')) {
+        treatment =  'Antibióticos e anti-inflamatórios prescritos';
+    } else if (symptoms.includes('febre') && symptoms.includes('tosse') && symptoms.includes('falta de ar')  && symptoms.includes('dor no peito')) {
         diagnosis = 'Pneumonia';
-        treatment =  'Isolamento, hidratação e acompanhamento médico';
+        treatment = 'Antibióticos e repouso';
     } else {
         diagnosis = 'Sintomas desconhecidos';
         treatment = 'Caso não tenha-o feito, consulte um médico.';
