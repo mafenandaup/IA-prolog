@@ -12,9 +12,9 @@ document.getElementById('diagnosis-form').addEventListener('submit', function(ev
     } else if (symptoms.includes('espirro') && symptoms.includes('nariz entupido')) {
         diagnosis = 'Resfriado';
         treatment = 'Hidratação';
-    } else if (symptoms.includes('febre') && symptoms.includes('falta de ar')) {
+    } else if (symptoms.includes('febre') && symptoms.includes('falta de ar') && symptoms.includes('dor de garganta'),symptoms.includes('sem paladar')) {
         diagnosis = 'Covid-19';
-        treatment = 'Isolamento';
+        treatment = 'Isolamento, Hidratação frequente,';
     } else {
         diagnosis = 'Sintomas desconhecidos';
         treatment = 'Consulte um médico';

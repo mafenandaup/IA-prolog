@@ -38,6 +38,7 @@ input {
 .button-group {
     display: flex;
     gap: 10px;
+   text-align: center;
 }
 
 button {
