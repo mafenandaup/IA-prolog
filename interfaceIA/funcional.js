@@ -19,7 +19,7 @@ document.getElementById('diagnosis-form').addEventListener('submit', function(ev
     if (symptoms.includes('febre') && symptoms.includes('tosse') && symptoms.includes('dor no corpo')) {
         diagnosis = 'Gripe';
         treatment = 'Repouso';
-    } else if (symptoms.includes('espirro') && symptoms.includes('nariz entupido')) {
+    } else if (symptoms.includes('espirros') && symptoms.includes('coriza')&& symptoms.includes('tosse')) {
         diagnosis = 'Resfriado';
         treatment = 'Hidratação';
     } else if (symptoms.includes('febre') && symptoms.includes('falta de ar') && symptoms.includes('dor de garganta') && symptoms.includes('sem paladar')) {
