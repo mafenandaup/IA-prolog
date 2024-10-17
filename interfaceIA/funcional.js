@@ -41,3 +41,7 @@ document.querySelector('button[type="reset"]').addEventListener('click', functio
 document.querySelectorAll('button[type="submit"]').addEventListener('keydown', function() {
     document.getElementById('result').innerHTML = `<h2>Diagnóstico: ${diagnosis}</h2><p>Tratamento recomendado: ${treatment}</p>`;
 });
+document.getElementById('painrange').addEventListener('input', function() {
+    if(painrange.value)
+    document.getElementById('rangeValue').textContent = this.value;
+});
