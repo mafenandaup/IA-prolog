@@ -2,6 +2,8 @@ document.getElementById('diagnosis-form').addEventListener('submit', function(ev
     event.preventDefault();
 
     const symptoms = document.getElementById('symptoms').value.split(',').map(symptom => symptom.trim().toLowerCase());
+    const illtime = document.getElementById('illtime').value;
+    const illtimenum = parseInt(document.getElementById('illtimenum').value);
 
     let diagnosis = '';
     let treatment = '';
@@ -9,7 +11,7 @@ document.getElementById('diagnosis-form').addEventListener('submit', function(ev
     if (symptoms.includes('febre') && symptoms.includes('tosse')) {
         diagnosis = 'Gripe';
         treatment = 'Repouso';
-    } else if (symptoms.includes('espirro') && symptoms.includes('nariz entupido')) {
+    } else if (symptoms.includes('espirro') && symptoms.includes('nariz entupido') && illtime.includes()) {
         diagnosis = 'Resfriado';
         treatment = 'Hidratação';
     } else if (symptoms.includes('') ) {
