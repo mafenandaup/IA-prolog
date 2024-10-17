@@ -14,11 +14,14 @@ document.getElementById('diagnosis-form').addEventListener('submit', function(ev
         treatment = 'Hidratação';
     } else if (symptoms.includes('febre') && symptoms.includes('falta de ar') && symptoms.includes('dor de garganta'),symptoms.includes('sem paladar')) {
         diagnosis = 'Covid-19';
-        treatment = 'Isolamento, Hidratação frequente, antitérmicos(controle da febre),Higiene frequente, Uso de máscaras respiratórias.';
+        treatment = 'Isolamento, Hidratação frequente, antitérmicos(controle da febre), Higiene frequente e uso de máscaras respiratórias.';
     } else {
         diagnosis = 'Sintomas desconhecidos';
         treatment = 'Consulte um médico';
     }
 
     document.getElementById('result').innerHTML = `<h2>Diagnóstico: ${diagnosis}</h2><p>Tratamento recomendado: ${treatment}</p>`;
+});
+document.querySelector('button[type="reset"]').addEventListener('click', function() {
+    document.getElementById('result').innerHTML = '';
 });
