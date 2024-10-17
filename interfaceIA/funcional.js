@@ -14,7 +14,7 @@ document.getElementById('diagnosis-form').addEventListener('submit', function(ev
         treatment = 'Hidratação';
     } else if (symptoms.includes('febre') && symptoms.includes('falta de ar') && symptoms.includes('dor de garganta'),symptoms.includes('sem paladar')) {
         diagnosis = 'Covid-19';
-        treatment = 'Isolamento, Hidratação frequente,';
+        treatment = 'Isolamento, Hidratação frequente, antitérmicos(controle da febre),Higiene frequente, Uso de máscaras respiratórias.';
     } else {
         diagnosis = 'Sintomas desconhecidos';
         treatment = 'Consulte um médico';
