@@ -51,9 +51,12 @@ button {
     flex: 1;
 }
 
+.illtime-group {
+    display: flex;
+    gap: 10px;
+}
 
-
-
+.illtime-group
 button:hover {
     background-color: #98bfcf;
     color: black;
