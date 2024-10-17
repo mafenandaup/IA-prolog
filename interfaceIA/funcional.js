@@ -16,7 +16,7 @@ document.getElementById('diagnosis-form').addEventListener('submit', function(ev
         severity = 'Muito severa';
     }
 
-    if (symptoms.includes('febre') && symptoms.includes('tosse')) {
+    if (symptoms.includes('febre') && symptoms.includes('tosse') && symptoms.includes('dor no corpo')) {
         diagnosis = 'Gripe';
         treatment = 'Repouso';
     } else if (symptoms.includes('espirro') && symptoms.includes('nariz entupido')) {
