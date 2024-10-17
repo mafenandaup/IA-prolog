@@ -2,8 +2,6 @@ document.getElementById('diagnosis-form').addEventListener('submit', function(ev
     event.preventDefault();
 
     const symptoms = document.getElementById('symptoms').value.split(',').map(symptom => symptom.trim().toLowerCase());
-    const illtime = document.getElementById('illtime').value;
-    const illtimenum = parseInt(document.getElementById('illtimenum').value);
 
     let diagnosis = '';
     let treatment = '';

@@ -55,24 +55,6 @@ button {
     flex: 1;
 }
 
-.illtime-group {
-    display: flex;
-    gap: 10px;
-    display: block;
-}
-
-#illtime-select{
-    width: 100px;
-    height: 40px;
-    text-align: center;
-    font-size: 15px;
-}
-
-.illtime-group
-button:hover {
-    background-color: #98bfcf;
-    color: black;
-}
 
 #result {
     margin-top: 20px;
