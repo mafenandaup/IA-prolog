@@ -37,3 +37,7 @@ document.getElementById('diagnosis-form').addEventListener('submit', function(ev
 document.querySelector('button[type="reset"]').addEventListener('click', function() {
     document.getElementById('result').innerHTML = '';
 });
+
+document.querySelectorAll('button[type="submit"]').addEventListener('keydown', function() {
+    document.getElementById('result').innerHTML = `<h2>Diagnóstico: ${diagnosis}</h2><p>Tratamento recomendado: ${treatment}</p>`;
+});
