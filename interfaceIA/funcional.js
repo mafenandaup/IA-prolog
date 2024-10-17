@@ -18,13 +18,25 @@ document.getElementById('diagnosis-form').addEventListener('submit', function(ev
 
     if (symptoms.includes('febre') && symptoms.includes('tosse') && symptoms.includes('dor no corpo')) {
         diagnosis = 'Gripe';
-        treatment = 'Repouso';
+        treatment = 'Repouso, hidratação e antitérmicos.';
     } else if (symptoms.includes('espirros') && symptoms.includes('coriza')&& symptoms.includes('tosse')) {
         diagnosis = 'Resfriado';
-        treatment = 'Hidratação';
-    } else if (symptoms.includes('febre') && symptoms.includes('falta de ar') && symptoms.includes('dor de garganta') && symptoms.includes('sem paladar')) {
+        treatment = 'Repouso e medicamentos para alívio dos sintomas';
+    } else if (symptoms.includes('febre') && symptoms.includes('falta de ar') && symptoms.includes('tosse') && symptoms.includes('falta de ar')) {
         diagnosis = 'Covid-19';
-        treatment = 'Isolamento, Hidratação frequente, antitérmicos (controle da febre), Higiene frequente e uso de máscaras respiratórias.';
+        treatment =  'Isolamento, hidratação e acompanhamento médico';
+    } else if (symptoms.includes('coriza') && symptoms.includes('dor de cabeca') && symptoms.includes('dor de cabeça') && symptoms.includes('dor facial') && symptoms.includes('nariz congestionado')) {
+        diagnosis = 'Sinusite';
+        treatment =  'Descongestionantes e, em alguns casos, antibióticos';
+    } else if (symptoms.includes('febre') && symptoms.includes('dor de cabeca') && symptoms.includes('dor no corpo') && symptoms.includes('manchas na pele')) {
+        diagnosis = 'Dengue';
+        treatment =  'Hidratação intensa e acompanhamento hospitalar';
+    } else if (symptoms.includes('febre') && symptoms.includes('falta de ar') && symptoms.includes('dor de garganta') && symptoms.includes('sem paladar')) {
+        diagnosis = 'Amigdalite';
+        treatment =  'Isolamento, hidratação e acompanhamento médico';
+    } else if (symptoms.includes('febre') && symptoms.includes('falta de ar') && symptoms.includes('dor de garganta') && symptoms.includes('sem paladar')) {
+        diagnosis = 'Pneumonia';
+        treatment =  'Isolamento, hidratação e acompanhamento médico';
     } else {
         diagnosis = 'Sintomas desconhecidos';
         treatment = 'Caso não tenha-o feito, consulte um médico.';
