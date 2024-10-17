@@ -20,6 +20,10 @@ body {
 .range-group{
     display: block;
 }
+button:hover{
+    color: black;
+    background-color: #89c6e4;
+}
 
 h1 {
     margin-top: 0;
