@@ -7,7 +7,7 @@ document.getElementById('diagnosis-form').addEventListener('submit', function(ev
     let treatment = '';
     let severity = '';
 
-    // Determinar a severidade com base no valor do range
+   
     if (painValue >= 0 && painValue <= 25) {
         severity = 'Pouco severa';
     } else if (painValue == 50) {
@@ -16,7 +16,6 @@ document.getElementById('diagnosis-form').addEventListener('submit', function(ev
         severity = 'Muito severa';
     }
 
-    // Diagnósticos com base nos sintomas
     if (symptoms.includes('febre') && symptoms.includes('tosse')) {
         diagnosis = 'Gripe';
         treatment = 'Repouso';
